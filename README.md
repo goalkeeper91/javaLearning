@@ -14,7 +14,23 @@ Als Grundlage nutze ich das Buch **„Programmieren lernen mit Java“** von **H
 Alle Quellcodes sind nach Themen und Kapiteln organisiert und gut kommentiert.  
 Ich freue mich über Feedback, Fragen oder Verbesserungsvorschläge!
 
+## Aktueller Fortschritt
 
+Bis jetzt habe ich die Übungen aus den ersten drei Kapiteln des Buches „Programmieren lernen mit Java“ erfolgreich umgesetzt. Der Schwerpunkt lag auf:
+
+- Grundlegender Java-Syntax und Programmstruktur
+- Kontrollstrukturen (Schleifen, Bedingungen)
+- Umgang mit Arrays und ArrayLists
+- Implementierung einfacher Algorithmen, z. B. die Collatz-Folge
+
+## Testautomatisierung mit JUnit
+Zur Verbesserung der Codequalität und Wartbarkeit wurde JUnit 5 ins Projekt integriert. Folgende Punkte wurden umgesetzt:
+
+- Manuelles Einbinden der JUnit 5-Bibliotheken in das Projekt
+- Schreiben erster Unit-Tests für Kernfunktionen (z. B. Collatz-Folge)
+- Ausführen und Überprüfen der Tests in IntelliJ IDEA
+
+Die Testabdeckung hilft, Fehler früh zu erkennen und Änderungen sicher vorzunehmen.
 
 
 # Learning Java – Exercises from "Programmieren lernen mit Java" by Hans-Peter Habelitz
@@ -32,3 +48,20 @@ I'm using the book **"Programmieren lernen mit Java"** by **Hans-Peter Habelitz*
 
 All source code is organized by topic and chapter, and includes helpful comments.  
 Feedback, questions, and suggestions for improvement are always welcome!
+
+## Current Progress
+So far, I have successfully completed the exercises from the first three chapters of "Programmieren lernen mit Java". The focus has been on:
+
+- Basic Java syntax and program structure
+- Control structures (loops, conditions)
+- Handling arrays and ArrayLists
+- Implementing simple algorithms such as the Collatz sequence
+
+## Test Automation with JUnit
+To improve code quality and maintainability, JUnit 5 has been integrated into the project. Achievements so far include:
+
+- Manually adding JUnit 5 libraries to the project
+- Writing initial unit tests for core functions (e.g., Collatz sequence)
+- Running and verifying tests within IntelliJ IDEA
+
+This test coverage helps catch errors early and confidently make changes.

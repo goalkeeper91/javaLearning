@@ -5,23 +5,24 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Collatzfolge2 {
-    public static void main(String[] args){
-        int x0, xn;
+
+    public static ArrayList<Integer> berechneFolge(int startwert) {
         ArrayList<Integer> folge = new ArrayList<>();
-
-        x0 = Integer.parseInt(JOptionPane.showInputDialog("Bitte geben sie eine Start Zahl ein: "));
-
-        while (x0 != 1) {
-            folge.add(x0); // 1 wird hier nie gespeichert
-
-            if (x0 % 2 == 0) {
-                xn = x0 / 2;
+        int x = startwert;
+        while (x != 1) {
+            folge.add(x);
+            if (x % 2 == 0) {
+                x = x / 2;
             } else {
-                xn = 3 * x0 + 1;
+                x = 3 * x + 1;
             }
-
-            x0 = xn;
         }
+        return folge;
+    }
+
+    public static void main(String[] args){
+        int startwert = Integer.parseInt(JOptionPane.showInputDialog("Bitte geben Sie eine Start Zahl ein: "));
+        ArrayList<Integer> folge = berechneFolge(startwert);
 
         StringBuilder message = new StringBuilder();
         for (int i = 0; i < folge.size(); i++) {
@@ -33,6 +34,7 @@ public class Collatzfolge2 {
 
         message.append("\nAnzahl der Folgeglieder: ").append(folge.size());
         message.append("\nDie größte Zahl in der Folge ist: ").append(Collections.max(folge));
+
         JOptionPane.showMessageDialog(null, message.toString());
     }
 }
