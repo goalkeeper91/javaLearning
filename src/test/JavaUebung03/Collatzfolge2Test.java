@@ -16,4 +16,20 @@ public class Collatzfolge2Test {
                 Collatzfolge2.berechneFolge(6)
         );
     }
+
+    @Test
+    public void testFolgeMit1() {
+        assertTrue(Collatzfolge2.berechneFolge(1).isEmpty());
+    }
+
+    @Test
+    public void testIstGueltigeStartzahl() {
+        assertTrue(Collatzfolge2.istGueltigeStartzahl("10"));
+        assertFalse(Collatzfolge2.istGueltigeStartzahl("-5"));
+        assertFalse(Collatzfolge2.istGueltigeStartzahl("0"));
+        assertFalse(Collatzfolge2.istGueltigeStartzahl("abc"));
+        assertFalse(Collatzfolge2.istGueltigeStartzahl(""));
+        assertFalse(Collatzfolge2.istGueltigeStartzahl(null));
+    }
+
 }
